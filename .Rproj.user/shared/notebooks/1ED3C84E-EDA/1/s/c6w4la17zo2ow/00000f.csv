@@ -1,0 +1,20 @@
+"0","df[""P19""] = df[""P19""].astype(str)"
+"0","value_count = df[""P19""].value_counts()"
+"0","df_contagem = pd.DataFrame({'Valor': value_count.index, 'Contagem': value_count.values})"
+"0","df"
+"1","      UF  REGIAO  IDADE  ESC  RENDA  RACACOR P19
+0     11       3      1    2      1        4   2
+1     11       3      2    1      1        2   2
+2     11       3      2    3      1        4   2
+3     11       3      3    2      1        1   2
+4     11       3      3    2      2        4   2
+...   ..     ...    ...  ...    ...      ...  ..
+1097  53       5      5    3      6        1   1
+1098  53       5      6    1      2        2   2
+1099  53       5      6    1      2        4   2
+1100  53    "
+"1","   5      6    2      1        1   2
+1101  53       5      6    2      2        4   2
+
+[1102 rows x 7 columns]
+"

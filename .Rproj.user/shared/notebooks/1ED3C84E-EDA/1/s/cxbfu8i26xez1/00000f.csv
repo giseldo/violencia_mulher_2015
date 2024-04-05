@@ -1,0 +1,5 @@
+"0","reticulate::repl_python()"
+"0","import pandas as pd"
+"0","import matplotlib.pyplot as plt"
+"0","df = pd.read_csv('dados_corrigido_2015.csv')"
+"0",""
