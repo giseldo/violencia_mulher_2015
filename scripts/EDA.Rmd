@@ -13,10 +13,10 @@ O objetivo deste estudo é analisar os dados sobre a violência contra a mulher 
 
 Os dados foram coletados do Instituto DataSenado. Eles trazem uma série de perguntas relacionadas à percepção de desrespeito, sensação de proteção, experiências de violência e de denúncias, perfil dos agressores, entre outros. O levantamento foi realizado por telefone, a partir de amostra probabilística de mulheres com acesso a telefone fixo. 
 
-Os dados originais estão disponívei nesse 
+- Os dados originais estão disponívei nesse 
 <a href="https://www12.senado.leg.br/institucional/omv/copy_of_acervo/outras-referencias/copy2_of_entenda-a-violencia/pesquisa-violencia-domestica-e-familiar-contra-a-mulher" target="_blank">link</a>.
-
-O repositório com o fonte em python estão no <a href="https://github.com/giseldo/violencia_mulher" target="_blank">GitHub</a>.
+- O código fonte em python está no <a href="https://github.com/giseldo/violencia_mulher" target="_blank">GitHub</a>.
+- O código fonte em R também está no <a href="https://github.com/giseldo/violencia_mulher_2015" target="_blank">GitHub</a>.
 
 ```{python}
 import pandas as pd
@@ -69,5 +69,11 @@ plt.show()
 
 Podemos perceber que a grande maioria das mulheres que responderam a pesquisa informaram que NÃO sofreram violência. Especificamente, 201 mulheres informaram que sofreram violência e 900 informaram que NÃO sofreram violência. 
 
+```{python}
+plt.pie(value_count , labels=value_count.index, autopct='%1.1f%%', startangle=140)
+plt.title('Distribuição de Categorias')
+plt.axis('equal')  # Deixa o gráfico circular
+plt.show()
+```
 
 
